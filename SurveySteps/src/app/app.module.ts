@@ -1,25 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from "./app.component";
-import {TOASTR_TOKEN, Toastr} from "./common/toastr.service";
-import { iAssetService } from './common/iasset.service';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms'
-
-declare let toastr: Toastr;
+import { RatingModule } from 'ngx-bootstrap';
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        HttpModule,
+        RatingModule.forRoot()
     ],
-    declarations : [AppComponent], 
-    providers:[
-        iAssetService,
-        { provide: TOASTR_TOKEN, useValue: toastr }
+    declarations : [
+        AppComponent
     ], 
-    bootstrap : [AppComponent],  
+    providers:[        
+    ], 
+    bootstrap : [AppComponent],    
 })
 export class AppModule {
 

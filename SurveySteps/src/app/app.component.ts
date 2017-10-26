@@ -1,32 +1,20 @@
 
 import { Component, Inject } from "@angular/core";
-import { Toastr, TOASTR_TOKEN } from "./common/toastr.service";
-import { iAssetService } from "./common/iasset.service";
 
 @Component({
-    selector:'iasset-app',
-    templateUrl:'./app.component.html'
+    selector:'survey-app',
+    templateUrl:'./app.component.html',    
+    styleUrls:[
+        './app.component.css'
+    ]    
+    
 })
-export class AppComponent {
-    countryName:string = '';
-    cities:string[];
+export class AppComponent {    
+    public rate: number = 0;
 
-    constructor(@Inject(TOASTR_TOKEN) private toastr: Toastr,
-    private iAssetService: iAssetService){
+    constructor(){
 
     }
-    getCities(){
-        if(!this.countryName)
-        {
-            this.toastr.info('Please input country name');
-            return;
-        }
-
-        this.iAssetService.getCities(this.countryName).subscribe(() => {
-            this.toastr.success(`Cities successfully retrieved for country ${this.countryName}`);
-        });
-        
-
-    }
+    
 
 }
