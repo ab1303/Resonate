@@ -1,0 +1,13 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <dl class="dl-horizontal">
+            <dt>Name : </dt>
+            <dd>{{vm.cheque.firstName}} {{vm.cheque.lastName}}</dd>
+            <dt>Amount :</dt>
+            <dd>{{vm.cheque.amount | currency: '$' : 2}}</dd>
+            <dt>Amount In Words:</dt>
+            <dd><i>{{vm.cheque.amount | amountToWords }}</i></dd>
+        </dl>
+    </div>
+
+</div>

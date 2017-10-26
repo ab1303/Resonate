@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <span us-spinner="{radius:30, width:8, length: 16}" spinner-on="showSpinner" spinner-theme="smallBlue" spinner-key="shellSpinner"></span>
+    <div class="col-sm-12">
+        
+        
+    
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong> Cheque(s) </strong>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <button class="btn btn-sm btn-success" style="width: 133px; margin-bottom: 5px;" ng-click="vm.addChequeItem()">
+                            <i class="fa fa-plus"></i> Add Cheque
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div>Total Elements found : {{vm.chequesList.length}}</div>
+                        <div ng-if="!!vm.chequesList && vm.chequesList.length>0">
+                            <secure-co-cheques-grid dt-instance="vm.chequesDtInstance" cheques-list="vm.chequesList"></secure-co-cheques-grid>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

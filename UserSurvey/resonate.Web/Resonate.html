@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html ng-app="resonateApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>resonate Application</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/dataTables/datatables.min.css" rel="stylesheet" />
+    <link href="Content/dataTables/fixedHeader.dataTables.min.css" rel="stylesheet" />
+    <link href="Content/sweetalert/sweetalert.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/spin.min.js"></script>
+    <script src="Scripts/dataTables/datatables.min.js"></script>
+    <script src="Scripts/dataTables/dataTables.fixedHeader.min.js"></script>
+    <script src="Scripts/dataTables/dataTables.bootstrap.min.js"></script>
+    <script src="Scripts/dataTables/dataTables.responsive.min.js"></script>
+    <script src="Scripts/dataTables/responsive.bootstrap.min.js"></script>
+    <script src="Scripts/dataTables/dataTables.buttons.min.js"></script>
+    <script src="Scripts/dataTables/buttons.bootstrap.min.js"></script>
+    <script src="Scripts/toastr.min.js"></script>
+    <script src="Scripts/sweetalert/sweetalert.min.js"></script>
+    <script src="Scripts/autoNumeric/autoNumeric-min.js"></script>
+    <link href="Content/select.css" rel="stylesheet" />
+    
+    <!-- Angular Library Scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-sanitize.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <!--<script src="Scripts/angular-ui-router.js"></script>-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/angular-spinner.min.js"></script>
+    <script src="Scripts/angular-datatables/angular-datatables.min.js"></script>
+    <script src="Scripts/angular-datatables/plugins/fixedheader/angular-datatables.fixedheader.min.js"></script>
+    <script src="Scripts/ngSweet/SweetAlert.js"></script>
+    <script src="Scripts/select.js"></script>
+
+    <!-- resonate App Scripts -->
+    <script src="app/resonateApp.js"></script>
+    <script src="app/resonateConfig.js"></script>
+    
+    <!-- Directives -->
+    <script src="app/directives/autoNumeric.js"></script>
+
+    <!-- Repositories -->
+    <script src="app/services/chequeRepository.js"></script>
+    
+    <!-- Components -->
+
+    <script src="app/components/resonateApp.js"></script>
+    <script src="app/components/resonateAbout.js"></script>
+
+    <script src="app/components/resonateCheques.js"></script>
+    <script src="app/components/resonateChequeFormat.js"></script>
+    <script src="app/components/resonateChequesGrid.js"></script>
+    
+    <!-- Controllers -->
+    <script src="app/controllers/chequeModalInstanceCtrl.js"></script>
+    
+    <!-- Filters -->
+    <script src="app/filters/amountToWords.js"></script>
+
+    <script type="text/javascript">
+        toastr.options = {
+            timeOut: 3000,
+            progressBar: true,
+            closeButton: true,
+            preventDuplicates: true,
+            extendedTimeOut: 1000,
+            positionClass: 'toast-top-center'
+        }
+    </script>
+
+</head>
+<body ng-cloak>
+
+
+    <secure-co-app></secure-co-app>
+    
+</body>
+</html>
