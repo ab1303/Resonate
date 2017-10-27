@@ -1,6 +1,8 @@
 
 import { Component, Inject } from "@angular/core";
 
+import '../styles.css';
+
 @Component({
     selector:'survey-app',
     templateUrl:'./app.component.html',    

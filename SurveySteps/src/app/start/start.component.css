@@ -1,0 +1,28 @@
+.start-container {
+    display: flex;
+    flex-flow: column;
+    height: 200px;
+    align-content: center;
+    justify-content: center;    
+}
+
+.start-flex-item{
+    text-align: center;
+}
+/* 
+.start-major-heading {
+    background-color: red;
+}
+
+.start-minor-heading{
+    background-color: green;
+} */
+
+.main{
+    flex:1;
+    background-color: blue;
+}
+
+.start-navigation{
+    background-color: blueviolet;
+}

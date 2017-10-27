@@ -1,12 +1,12 @@
-<span style="font-size: 50px;">
-    <rating 
-        [(ngModel)]="rate" 
-        [max]="5" 
-        [readonly]="false"
-        [titles]="['Very Unsatisfactory','Unsatisfactory','Average','Satisfactory','Very Satisfactory']"
-        ></rating>
-</span>
 
-<div class="card">
-    <pre class="card-block card-header" style="margin:15px 0;">Rate: <b>{{rate}}</b> </pre>
+<div class="container">
+
+    <div class="header"></div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer"></div>
+
+    <!--  -->
+    
 </div>
