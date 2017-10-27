@@ -34,7 +34,11 @@ h1 {
   .main{
     background-color:#fdf;
     flex:1;
-    
+    display: flex;
+    flex-flow: column;
+    height: 200px;    
+    align-content: center;
+    justify-content: center; 
   }
 
   .footer {

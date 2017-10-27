@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './feedback.component.html'
+    templateUrl: './feedback.component.html',
+    styleUrls: [
+        './feedback.component.css'
+    ]
 })
 export class FeedbackComponent {
     public pageTitle: string = 'Feedback';
